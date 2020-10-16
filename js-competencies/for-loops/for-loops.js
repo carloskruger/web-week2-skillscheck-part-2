@@ -11,7 +11,10 @@
   function addNumbers(value){
       var myNumbers = []
       //Code here
-      
+      for (let i = 0; i < value; i++){
+        myNumbers.push(i)
+      }
+      return myNumbers;
   }
 
 
@@ -25,7 +28,10 @@
   function backwardsGreeting(arr) {
     let greetings = [];
     //Code here
-  
+    for (let i = 0; i < arr.length; i++){
+        greetings.push("Hello, " + arr[i]) 
+    }
+  return greetings
   }
 
 

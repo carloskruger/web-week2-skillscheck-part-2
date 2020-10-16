@@ -12,7 +12,9 @@ function addDucks(arr, ind) {
 
   //WRITE YOUR FOR-LOOP HERE
   //For your iterator, declare it with the let keyword, and name it "i"
-  
+  for (let i = 0; i < arr.length; i++){
+    arr[i] = arr[i] + "Duck"
+  }
 
   //DO NOT TOUCH THIS
   return [arr, ind]
@@ -27,7 +29,7 @@ function addDucks(arr, ind) {
 
 if (true) {
   //CODE HERE
-
+let color = "red"
 
   //DO NOT TOUCH THIS LINE
   getter.get(color)
@@ -39,7 +41,7 @@ if (true) {
 //Assign it the value of "Hello".
 
 //Code here
-
+const greetingsEarthlings = "Hello"
 
 //////////////////PROBLEM 4////////////////////
 //Create a function called madLib that takes in a
@@ -52,7 +54,9 @@ if (true) {
 //look it up, check out the documentation.
 
 //Code here
-
+function madLib(str){
+  return `${str}, my dear Watson.`
+}
 
 //////////////////PROBLEM 5////////////////////
 //Based on the following code, answer the question below:
@@ -91,6 +95,8 @@ var obj = { a: "a", b: "b", c: "c" }
 function whatOcean(obj) {
 
   //Code here
+  const {ocean} = obj
+  return ocean
   
 }
 
@@ -103,5 +109,7 @@ function whatOcean(obj) {
 //the leftovers function should return the string, plus " & ",
 //plus the last element of the rest parameter, like so:
 //"spaghetti & liver with onions"
-
+function leftovers(str, ...theRest){
+  return str + " & " + theRest[theRest.length - 1]
+}
 
