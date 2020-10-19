@@ -73,7 +73,7 @@ var obj = { a: "a", b: "b", c: "c" }
 //used spread operators.
 
 // var answers = ["Example A", "Example B", "Example C", "Example D"]
-// var answers = ["Example B", "Example C", "Example D"]
+var answers = ["Example B", "Example C", "Example D"]
 // var answers = ["Example A", "Example B"]
 // var answers = ["Example C", "Example D"]
 
@@ -84,7 +84,7 @@ var obj = { a: "a", b: "b", c: "c" }
 //string without spaces.
 
 //Code here
-
+const cleanUp = (str) => { let arr = str.split(' '); let newStr = arr.join(''); return newStr;} 
 
 //////////////////PROBLEM 7////////////////////
 //Finish the function below. Assume that the
