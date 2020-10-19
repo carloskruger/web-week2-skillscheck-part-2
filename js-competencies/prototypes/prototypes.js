@@ -5,7 +5,15 @@
 
 //Code here
 
-
+String.prototype.reverse = function (){  
+  let arr = this.split('');
+  let reverseArr = [];
+  for (let i = arr.length - 1; i >= 0; i--){
+    reverseArr.push(arr[i])
+  }
+  let reverseStr = reverseArr.join('')
+  return reverseStr
+  }
 //////////////////PROBLEM 2////////////////////
 
 // Based on the constructor below for a Person, create a prototype called drinkCoffee, and readDocumentation
@@ -22,4 +30,17 @@ function Person(name, age) {
 }
 
 //Code here
+Person.prototype.drinkCoffee = function(){ 
+this.energy += 10;
+this.linesOfCode += 50;
+this.qualityOfCode -= 1
+return this
+}
 
+Person.prototype.readDocumentation = function(){ 
+  this.energy -= 20;
+  this.linesOfCode -= 30;
+  this.qualityOfCode += 3
+  return this
+  }
+  
