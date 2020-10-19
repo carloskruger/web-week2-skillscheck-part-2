@@ -15,7 +15,6 @@ function keyword(){
 const key = function(){ 
     return "word";
   }
-
   return key;
 }
 
